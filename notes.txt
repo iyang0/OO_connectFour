@@ -1,0 +1,5 @@
+bunch of disconnected functions and global variables.
+
+put things into a game class with properties height, width, and basically everything
+Make a constructor that sets default values for these(constructor only has input for width and height, also has defaults)
+make the functions into methods(need to invoke "this")
