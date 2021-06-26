@@ -4,6 +4,16 @@
  * column until a player gets four-in-a-row (horiz, vert, or diag) or until
  * board fills (tie)
  */
+
+document.addEventListener("DOMContentLoaded", function(){
+  let gameContainer = document.getElementById("game");
+  let startButton = document.createElement("button");
+  startButton.innerHTML = "Start Game";
+  startButton.addEventListener("click", function(){new Game(6, 7)});
+  gameContainer.appendChild(startButton);
+});
+
+
 class Game {
     
   constructor(height=6, width=7){
@@ -159,7 +169,4 @@ class Game {
     }
   }
   
-
 }
-
-new Game(6, 7);
